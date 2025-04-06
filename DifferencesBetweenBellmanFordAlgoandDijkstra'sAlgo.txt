@@ -1,0 +1,19 @@
+Differences between Bellman-Ford and Dijkstra’s algorithms:
+
+Approach:
+Bellman-Ford: Dynamic Programming approach.
+Dijkstra: Greedy approach.
+
+Negative Weights:
+Bellman-Ford handles negative weight edges and detects negative weight cycles.
+Dijkstra may not work with negative weight edges and definitely fails with negative weight cycles.
+
+Result:
+Bellman-Ford result contains vertices with information about other connected vertices.
+Dijkstra result contains vertices with whole network information, not just connected vertices.
+
+Complexity:
+Bellman-Ford is more time-consuming (O(VE)).
+Dijkstra is less time-consuming (O(E log V)).
+
+Remember that Bellman-Ford is useful for graphs with negative weights, while Dijkstra is more efficient for non-negative weights. 
